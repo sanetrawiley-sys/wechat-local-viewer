@@ -44,7 +44,7 @@
     <SearchPanel v-if="settingsStore.showSearch" />
 
     <!-- 联系人面板 -->
-    <ContactsPanel v-if="settingsStore.showContacts" />
+    <ContactsPanel v-if="settingsStore.showContacts" @close="settingsStore.showContacts = false" />
 
     <!-- 设置面板 -->
     <SettingsPanel v-if="settingsStore.showSettings" />
